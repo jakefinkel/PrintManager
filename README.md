@@ -1,15 +1,13 @@
 # PrintManager
 PHP Lab
 
-Coming soon:
-- use autoloading
+Done So Far (newest to oldest):
 - use namespaces
-
-Done So Far:
-- set up vagrant
-- create a class
-- use inheritance
-- use magic methods
+- use autoloading
 - use type hinting
 - use an abstract class
 - use an interface
+- use inheritance
+- use magic methods
+- create a class
+- set up vagrant
