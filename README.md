@@ -14,4 +14,4 @@ Done So Far (newest to oldest):
 - create a class
 - set up vagrant
 
-wget -O - https://raw.github.com/jakefinkel/PrintManager/master/install | sh
+`wget -O - https://raw.github.com/jakefinkel/PrintManager/master/install | sh`
