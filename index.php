@@ -4,10 +4,7 @@ namespace PrintManager;
 ini_set('display_errors', 1);
 
 spl_autoload_register(function ($class) {
-    $reversedSlashes = str_replace('\\', '/', $class);
-    $withExtension = $reversedSlashes . ".php";
-    $requirePath = str_replace(__NAMESPACE__ . '/', '', $withExtension);
-
+    $requirePath = str_replace('\\', '/', $class) . ".php";
     require_once($requirePath);
 });
 
