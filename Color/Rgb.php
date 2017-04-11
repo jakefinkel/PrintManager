@@ -1,4 +1,5 @@
 <?php
+namespace PrintManager\Color;
 
 class Rgb {
     private $r = 0;
