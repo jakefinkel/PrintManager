@@ -1,4 +1,5 @@
 <?php
+namespace PrintManager\Printer;
 
 interface PrinterInterface {
     public function getName() : string;    

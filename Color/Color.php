@@ -1,6 +1,5 @@
 <?php
-
-require_once 'rgb.php';
+namespace PrintManager\Color;
 
 class Color {
     private $_rgb;
