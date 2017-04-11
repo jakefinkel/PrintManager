@@ -1,10 +1,5 @@
 <?php
-
 namespace PrintManager;
-
-set_error_handler(function() {
-    echo "error";
-});
 
 ini_set('display_errors', 1);
 
