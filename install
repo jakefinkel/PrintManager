@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "cd home"
+cd ~
+echo "download"
+wget https://github.com/jakefinkel/PrintManager/archive/master.zip
+echo "extract"
+unzip master.zip JakeLab
+echo "cd JakeLab"
+cd JakeLab
+echo "browse to: http://localhost:8080"
+echo "starting PHP"
+php -S localhost:8080 &
+exit 0
