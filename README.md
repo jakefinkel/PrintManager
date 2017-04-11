@@ -9,5 +9,6 @@ Done So Far (newest to oldest):
 - use an interface
 - use inheritance
 - use magic methods
+- use static method
 - create a class
 - set up vagrant
