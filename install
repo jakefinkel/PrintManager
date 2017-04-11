@@ -11,4 +11,5 @@ cd PrintManager-master
 echo "browse to: http://localhost:8080"
 echo "starting PHP"
 php -S localhost:8080 &
+nautilus .
 exit 0
