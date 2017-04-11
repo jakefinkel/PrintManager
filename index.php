@@ -14,4 +14,6 @@ $cmyk = new Printer\CmykPrinter($name = "XEROX Phaser 8100");
 $rgb->print();
 $cmyk->print();
 
+Printer\Printer::printNumberOfPrinters();
+
 ?>

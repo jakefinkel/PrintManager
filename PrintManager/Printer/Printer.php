@@ -5,6 +5,7 @@ interface PrinterInterface {
     public function getName() : string;    
     public function printNumberOfChannels() : string;    
     public function print();
+    public static function printNumberOfPrinters();
 }
 
 abstract class Printer implements PrinterInterface {
@@ -45,7 +46,7 @@ abstract class Printer implements PrinterInterface {
         return $this;
     }
     
-    public function __invoke() {
-        echo "you have " . self::$NUMBER_OF_PRINTERS . " printers<br />";
+    public static function printNumberOfPrinters() {
+        echo "You have " . self::$NUMBER_OF_PRINTERS . " printers<br />";
     }
 }
