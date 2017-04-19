@@ -2,6 +2,8 @@
 PHP Lab
 
 Done So Far (newest to oldest):
+- client side validation
+- registration page
 - bootstrapper
 - use namespaces
 - use autoloading
