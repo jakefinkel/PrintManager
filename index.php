@@ -8,7 +8,13 @@ spl_autoload_register(function ($class) {
     require_once($requirePath);
 });
 
-echo 'Welcome, ' . $_POST['email'] . '!';
+if (array_key_exists('email', $_POST)) {
+    echo 'Welcome, ' . $_POST['email'] . '!';
+}
+else {
+    echo '<h1>Please <a href="register.html">Sign Up</a></h1>';
+    die();
+}
 
 $rgb  = new Printer\RgbPrinter($name = 'Microsoft XPS Document Writer');
 $cmyk = new Printer\CmykPrinter($name = 'XEROX Phaser 8100');
@@ -17,5 +23,4 @@ $rgb->print();
 $cmyk->print();
 
 Printer\Printer::printNumberOfPrinters();
-
 ?>
