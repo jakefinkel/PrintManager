@@ -5,15 +5,19 @@
     <title>Print Manager Sign Up</title>
     <link rel="stylesheet" href="register.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-  <script type="text/javascript">
-    function validate() {
-      var pwd1 = document.getElementById('password').value;
-      var pwd2 = document.getElementById('confirm').value;
-      if (pwd1 === pwd2) return true;
-      else alert("Passwords do not match!");
-      return false;
-    }
-  </script>
+    <script type="text/javascript">
+      function validate() {
+        var email = document.getElementById('email').value;
+        var pwd1 = document.getElementById('password').value;
+        var pwd2 = document.getElementById('confirm').value;
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+          if (pwd1 === pwd2) return true;
+          else alert("Passwords do not match!");
+        }
+        else alert ("Not a valid E-Mail address!");
+        return false;
+      }
+    </script>
   </head>
   <body>
     <form action="index.php" method="post" name="signup" onsubmit="return validate()">
@@ -25,15 +29,15 @@
       </div>
       <div class="input_div">
         <input type="text" class="input" id="email" name="email" placeholder="NAME@EXAMPLE.COM" required>
-	  </div>
-	  <div class="input_div">
-		<input type="password" class="input" id="password" name="password" placeholder="PASSWORD" required>
       </div>
-	  <div class="input_div">
-		<input type="password" class="input" id="confirm" name="confirm" placeholder="CONFIRM PASSWORD" required>
+      <div class="input_div">
+        <input type="password" class="input" id="password" name="password" placeholder="PASSWORD" required>
       </div>
-	  <div class="input_div">
-                <input type="submit" class="button" id="submit" value="SIGN UP">
+      <div class="input_div">
+        <input type="password" class="input" id="confirm" name="confirm" placeholder="CONFIRM PASSWORD" required>
+      </div>
+      <div class="input_div">
+        <input type="submit" class="button" id="submit" value="SIGN UP">
       </div>
     </form>
   </body>
