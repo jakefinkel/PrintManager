@@ -1,7 +1,12 @@
 # PrintManager
 PHP Lab
 
+TODO:
+- set a cookie
+- use a database
+
 Done So Far (newest to oldest):
+- check for email on index
 - client side validation
 - registration page
 - bootstrapper
