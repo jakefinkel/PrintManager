@@ -2,7 +2,7 @@
     "name": "jakefinkel/printmanager",
     "description": "package for managing printer representations",
     "type": "library",
-    "license": "Copyleft",
+    "license": "Unlicense",
     "authors": [
         {
             "name": "Jake Finkel",
