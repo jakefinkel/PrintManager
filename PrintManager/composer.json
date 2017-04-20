@@ -1,0 +1,13 @@
+{
+    "name": "jakefinkel/printmanager",
+    "description": "package for managing printer representations",
+    "type": "library",
+    "license": "Copyleft",
+    "authors": [
+        {
+            "name": "Jake Finkel",
+            "email": "jfinkel@xrite.com"
+        }
+    ],
+    "require": {}
+}
